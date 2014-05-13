@@ -1,0 +1,724 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Monitor Your App: A Complete Panel of Titanium Monitoring Solutions</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=792, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
+	<link rel="stylesheet" href="styles/prism.css" />
+	<link rel="stylesheet" href="styles/custom.css">
+</head>
+<body class="list">
+	<header class="caption">
+		<h1>Monitor Your App: A Complete Panel of Titanium Monitoring Solutions</h1>
+		<p>TiConf NY - Xavier Lacot - May 10th, 2014</p>
+	</header>
+
+	<section class="slide cover" id="coverpage"><div>
+		<div class="covertitle">
+			<h2>Monitor Your App: A Complete Panel of Titanium Monitoring Solutions</h2>
+			<p>TiConf NY - <a href="http://lacot.org/">Xavier Lacot</a> - <span class="date">May 10th, 2014</span></p>
+		</div>
+		<img src="covers/11.jpg" alt="" />
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Hello, I am Xavier</h2>
+		<ul style="margin-bottom: 25px">
+			<li>Founder, Web- and Mobile- expert at <a href="http://jolicode.com">JoliCode</a></li>
+			<li>Contributor to <a href="http://github.com/xavierlacot">several Open Source projects</a></li>
+			<li>Titanium developer since 2009
+				<ul>
+					<li>Speaker at CodeStrong 2011 and TiConf 2013</li>
+				</ul>
+			</li>
+			<li>Former President of the <a href="http://afup.org/">French Association of PHP Users</a></li>
+			<li>Co-organizer of the <a href="http://meetup.com/paris-titanium/">Titanium Paris</a> meetup group</li>
+		</ul>
+		<p><img src="pictures/twitter.png" style="width: 20px"> <a href="https://twitter.com/xavierlacot">@xavierlacot</a></p>
+	</div></section>
+
+	<section class="slide cover"><div>
+		<h2>Being a Titanium developer...</h2>
+		<img src="covers/2.jpg" alt="" />
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Titanium is a superb platform</h2>
+		<ul>
+			<li>develop fast</li>
+			<li>code once</li>
+			<li>publish on several platforms at once</li>
+			<li>have aggregated statistics</li>
+		</ul>
+		<p>It saved us and our clients lot of time and money</p>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Mobile apps evolve in a challenging context</h2>
+		<ul>
+			<li>various OS</li>
+			<li>device fragmentation</li>
+			<li>external dependancies</li>
+			<li>(usually) lower investments</li>
+		</ul>
+		<p>Running an app in a reliable way, always and accross all devices, is a hard job</p>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Many external dependancies</h2>
+		<ul>
+			<li>APIs</li>
+			<li>images and assets</li>
+			<li>Cloud services / social networks</li>
+			<li>in-app billing</li>
+			<li>adverts</li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Mobile applications mean...</h2>
+		<ul>
+			<li>limited hardware (do not compute complicated things)</li>
+			<li>network-bounded (dependancy on APIs, etc):
+				<ul>
+					<li>do not make dozens of simulataneous http requests</li>
+					<li>earth-sized roundtrips are slow → server-side optims + a <abbr title="Content Delivery Network">CDN</abbr></li>
+				</ul>
+			</li>
+			<li>you must test on as many devices ans OS as you can</li>
+		</ul>
+		<p class="next">Even with experience, you will sometimes forget about these rules.</p>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Bugs, slowness, etc.,</h2>
+		<ul>
+			<li>...are part of every piece of software's lifecycle</li>
+			<li class="next">...happen
+				<ul>
+					<li>whatever the amount of tests or your devotion to quality</li>
+				</ul>
+			</li>
+			<li class="next">...are not a problem
+				<ul>
+					<li>...as long as you detect them and react</li>
+				</ul>
+			</li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>U said monitoring?</h2>
+		<ul>
+			<li>ensure most of the users are satisfied, everytime</li>
+			<li>detect bottlenecks and crashes</li>
+			<li>reproduce and analyse</li>
+			<li>improve / take action</li>
+			<li>test and ship</li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>U said monitoring?</h2>
+		<ul>
+			<li>ensure most of the users are satisfied, everytime</li>
+			<li><strong>detect bottlenecks and crashes</strong> ← monitoring is here</li>
+			<li>reproduce and analyse</li>
+			<li>improve / take action</li>
+			<li>test and ship</li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Several things to monitor (1/2)</h2>
+		<ul>
+			<li>Users amount
+				<blockquote>
+					<p>How many customers use my apps?</p>
+					<p>Do the userbase inscrease or decrease in time?</p>
+				</blockquote>
+			</li>
+			<li>User bahavior and tracking
+				<blockquote>
+					<p>How do the users behave?</p>
+					<p>Can I optimize it (and earn more money/sell more)?</p>
+				</blockquote>
+			</li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Several things to monitor (2/2)</h2>
+		<ul>
+			<li>Performance / responsiveness
+				<blockquote>
+					<p>Which parts of my app are slow?</p>
+				</blockquote>
+			</li>
+			<li>Reliability and crashes collection
+				<blockquote>
+					<p>Do some parts of my app crash (sometimes)?</p>
+					<p>At which frequency?</p>
+					<p>What are details about crashes?</p>
+				</blockquote>
+			</li>
+		</ul>
+	</div></section>
+
+	<section class="slide shout"><div>
+		<h2>Monitoring the users</h2>
+	</div></section>
+
+	<section class="slide cover"><div>
+		<h2>TiAnalytics</h2>
+		<img src="covers/tianalytics.jpg" alt="" />
+	</div></section>
+
+	<section class="slide tall"><div>
+		<img src="pictures/tianalytics/dashboard.png" alt="" />
+	</div></section>
+
+	<section class="slide tall"><div>
+		<h2>Users</h2>
+		<img src="pictures/tianalytics/users.png" alt="" />
+	</div></section>
+
+	<section class="slide tall"><div>
+		<h2>Geography</h2>
+		<img src="pictures/tianalytics/geography.png" alt="" />
+	</div></section>
+
+	<section class="slide tall"><div>
+		<h2>Evolution</h2>
+		<img src="pictures/tianalytics/evolution.png" alt="" />
+	</div></section>
+
+	<section class="slide tall"><div>
+		<h2>Pros / cons</h2>
+		<ul>
+			<li>allows cross-platform monitoring</li>
+			<li>works "out of the box" / avail. in Appcelerator Cloud Services ❤
+				<pre data-src="markup.html"><code class="language-markup"></code></pre>
+			</li>
+			<li>cons / limits:
+				<ul>
+					<li>the web interface is laggy/buggy?</li>
+					<li>free version limited to 1,000,000 events/month</li>
+				</ul>
+			</li>
+		</ul>
+	</div></section>
+
+	<section class="slide cover"><div>
+		<h2>Google Analytics</h2>
+		<img src="covers/1.jpg" alt="" />
+	</div></section>
+
+	<section class="slide tall"><div>
+		<h2>Dashboard</h2>
+		<img src="pictures/googleanalytics/dashboard.png" alt="" />
+	</div></section>
+
+	<section class="slide tall"><div>
+		<h2>Geography</h2>
+		<img src="pictures/googleanalytics/geography.png" alt="" />
+	</div></section>
+
+	<section class="slide tall"><div>
+		<h2>Real time</h2>
+		<img src="pictures/googleanalytics/realtime.png" alt="" />
+	</div></section>
+
+	<section class="slide tall"><div>
+		<h2>Pros / cons</h2>
+		<ul>
+			<li>available at <a href="https://github.com/MattTuttle/titanium-google-analytics">https://github.com/MattTuttle/titanium-google-analytics</a></li>
+			<li>easy to implement
+				<pre><code class="language-javascript">var GA = require('analytics.google');
+var tracker = GA.getTracker(token);
+
+tracker.trackScreen('homepage');
+tracker.trackScreen('news');
+tracker.trackEvent({
+    category: 'user_account',
+    action: 'upload_profile',
+    label: 'success'
+});</code></pre>
+			</li>
+			<li>not the "mobile reference"?</li>
+		</ul>
+	</div></section>
+
+	<section class="slide cover"><div>
+		<h2>Flurry Analytics</h2>
+		<img src="covers/3.jpg" alt="" />
+	</div></section>
+
+	<section class="slide tall"><div>
+		<h2>Flurry Analytics</h2>
+		<ul>
+			<li>one of the major mobile analytics provider</li>
+			<li>OSS module (iOS only) available at <a href="https://github.com/appcelerator-modules/ti.flurry">https://github.com/appcelerator-modules/ti.flurry</a>. Won't work</li>
+			<li>iOS and Android (not x86) at <a href="https://github.com/softgravity/titanium_flurry">https://github.com/softgravity/titanium_flurry</a></li>
+			<li>Many features:<ul>
+				<li>usage statistics</li>
+				<li>technical segmentation</li>
+				<li>crash collection</li>
+			</ul></li>
+		</ul>
+	</div></section>
+
+	<section class="slide tall"><div>
+		<img src="pictures/flurry/dashboard.png" alt="" />
+	</div></section>
+
+	<section class="slide tall"><div>
+		<img src="pictures/flurry/menu.png" alt="" />
+	</div></section>
+
+	<section class="slide tall"><div>
+		<h2>Howto</h2>
+		<pre data-line="6,9-10"><code class="language-javascript">// enable Flurry analytics
+var flurry = require('sg.flurry');
+flurry.secureTransport(true);
+flurry.logUncaughtExceptions(true);
+flurry.crashReportingEnabled(true);
+flurry.startSession('WVCDT3VDPJ6BRCJ6GJYS');
+
+// usage
+flurry.logEvent('hello', {world: 'TiConf'});
+flurry.logError('unknown error', 'no crash');
+
+// some report about the user
+flurry.setUserID(user.id);
+flurry.setAge(user.age);
+// flurry.setGender(flurry.MALE);
+// flurry.setLatitude(latitude, longitude);
+flurry.logPageView();</code></pre>
+	</div></section>
+
+	<section class="slide cover"><div>
+		<h2>Lookback</h2>
+		<img src="covers/4.jpg" alt="" />
+	</div></section>
+
+	<section class="slide tall"><div>
+		<h2>Lookback</h2>
+
+		<ul>
+			<li>
+				Records the screen, gestures, face &amp; voice of the users
+			</li>
+		</ul>
+		<img src="pictures/lookback/lookback.png" alt="" />
+	</div></section>
+
+	<section class="slide tall"><div>
+		<img src="pictures/lookback/lookback-0.png" alt="" />
+	</div></section>
+
+	<section class="slide tall"><div>
+		<img src="pictures/lookback/lookback-1.png" alt="" />
+	</div></section>
+
+	<section class="slide tall"><div>
+		<img src="pictures/lookback/lookback-2.png" alt="" />
+	</div></section>
+
+	<section class="slide tall"><div>
+		<img src="pictures/lookback/lookback-3.png" alt="" />
+	</div></section>
+
+	<section class="slide tall"><div>
+		<h2>Howto</h2>
+
+		<ul>
+			<li>
+	    		A Titanium module is available (iOS only). Thanks Stephen Feather!
+	    	</li>
+	    	<li>
+	    		<a href="https://github.com/sfeather/TiLookback">https://github.com/sfeather/TiLookback</a>
+	    	</li>
+	    	<li>
+	    		Usage:
+	    		<pre><code class="language-javascript">Ti.App.Properties.setString('LookbackAppToken', 'your_app_token');
+var Lookback = require('com.featherdirect.lookback');
+
+Lookback.enableShakeToRecord();
+Lookback.disableShakeToRecord();
+
+// etc.
+</code></pre>
+			</li>
+		</p>
+	</div></section>
+
+	<section class="slide shout"><div>
+		<h2>Monitoring performance and crashes</h2>
+	</div></section>
+
+	<section class="slide cover"><div>
+		<h2>NewRelic</h2>
+		<img src="covers/5.jpg" alt="" />
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>NewRelic</h2>
+		<ul>
+			<li>A very complete Web and mobile monitoring solution</li>
+			<li>Quite a standard since long on the Web side:
+				<ul>
+					<li>introspect server traces</li>
+					<li>compatible with many languages</li>
+				</ul>
+			</li>
+			<li>A mobile offer since last year</li>
+			<li>And a Titanium module ❤</li>
+		</ul>
+	</div></section>
+
+	<section class="slide tall"><div>
+		<h2>App overview</h2>
+		<img src="pictures/newrelic/dashboard.png" alt="" />
+	</div></section>
+
+	<section class="slide tall"><div>
+		<h2>Network response time</h2>
+		<img src="pictures/newrelic/network-http.png" alt="" />
+	</div></section>
+
+	<section class="slide tall"><div>
+		<img src="pictures/newrelic/network-errors.png" alt="" />
+	</div></section>
+
+	<section class="slide tall"><div>
+		<img src="pictures/newrelic/network-all-errors.png" alt="" />
+	</div></section>
+
+	<section class="slide tall"><div>
+		<img src="pictures/newrelic/alert.png" alt="" />
+	</div></section>
+
+	<section class="slide tall"><div>
+		<h2>Howto</h2>
+		<ul>
+			<li>
+				enabling NewRelic is easy:
+				<pre><code class="language-javascript">var newrelic = require('ti.newrelic');
+newrelic.start(newrelicToken);</code></pre>
+			</li>
+			<li style="margin-top: 10px">
+				caution, it crashes apps on iOS6-
+				<pre style="margin-bottom: 40px"><code class="language-javascript">var startNewRelic = function(newrelicToken) {
+    var version = Titanium.Platform.version.split(".");
+    var major = parseInt(version[0], 10);
+
+    if (!OS_IOS || major >= 7) {
+        var newrelic = require('ti.newrelic');
+        newrelic.start(newrelicToken);
+    }
+};</code></pre>
+			</li>
+		</ul>
+	</div></section>
+
+	<section class="slide tall"><div>
+		<h2>NewRelic</h2>
+		<ul>
+			<li>A must-have for mobile-monitoring</li>
+			<li>Several plans
+				<ul>
+					<li>the free one is convenient if you do not need data retention</li>
+				</ul>
+			</li>
+			<li>building on Android is broken at the moment
+				<ul>
+					<li>temporary-solution gistsaver: <a href="https://gist.github.com/kennr/9698576">https://gist.github.com/kennr/9698576</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div></section>
+
+
+	<section class="slide cover"><div>
+		<h2>Crittercism</h2>
+		<img src="covers/6.jpg" alt="" />
+	</div></section>
+
+	<section class="slide tall"><div>
+		<h2>Crittercism</h2>
+		<ul>
+			<li>A leader in the mobile app monitoring field</li>
+			<li>Features:
+				<ul>
+					<li>performance monitoring</li>
+					<li>crashes collection</li>
+					<li>data segmentation (geo / user / os / etc.)</li>
+					<li>alerts</li>
+					<li>realtime</li>
+				</ul>
+			</li>
+			<li>Free up to 30K monthly users (limited features)</li>
+			<li>Included in Appcelerator Platform ("Performance Management")</li>
+		</ul>
+	</div></section>
+
+	<section class="slide tall"><div>
+		<h2>Crash</h2>
+		<img src="pictures/crittercism/crash.jpg" alt="" />
+	</div></section>
+
+	<section class="slide tall"><div>
+		<h2>Performance</h2>
+		<img src="pictures/crittercism/performance.jpg" alt="" />
+	</div></section>
+
+	<section class="slide tall"><div>
+		<h2>Alerts</h2>
+		<img src="pictures/crittercism/alerts.png" alt="" />
+	</div></section>
+
+	<section class="slide tall"><div>
+		<h2>Few modules</h2>
+		<ul>
+			<li>(android only) <a href="https://github.com/shivakumars/Titanium-Crittercism-Android">in.shivakumars.crittercism</a> does not seem maintained
+			<pre style="margin-bottom: 40px"><code class="language-javascript">var crittercism = require("in.shivakumars.crittercism");
+
+crittercism.initializeCrittercism({
+    apiKey : "HERE_YOUR_KEY",
+    includeVersionName : false,
+    includeVersionCode : false,
+    userName : "xavier"
+});</code></pre>
+			</li>
+			<li><a href="https://github.com/timbotnik/alloy-crash-test">the "alloy crash test"</a> app found on GitHub contains "com.crittercism.ti" modules for iOS and Android. Not tested.</li>
+		</ul>
+	</div></section>
+
+
+	<section class="slide tall" id="crittercism-pricing"><div>
+		<h2>Pricing</h2>
+
+		<table>
+			<tr>
+				<th scope="col"></th>
+				<th scope="col">Basic</th>
+				<th scope="col">Professional</th>
+				<th scope="col">Pro Plus</th>
+			</tr>
+			<tr>
+				<th scope="row">Price</th>
+				<td>Free</td>
+				<td>$1200/year</td>
+				<td>$6000/year</td>
+			</tr>
+			<tr>
+				<th scope="row">Crash details</th>
+				<td><img src="pictures/yes.png" class="check" alt="" /></td>
+				<td><img src="pictures/yes.png" class="check" alt="" /></td>
+				<td><img src="pictures/yes.png" class="check" alt="" /></td>
+			</tr>
+			<tr>
+				<th scope="row">Live graphs</th>
+				<td><img src="pictures/yes.png" class="check" alt="" /></td>
+				<td><img src="pictures/yes.png" class="check" alt="" /></td>
+				<td><img src="pictures/yes.png" class="check" alt="" /></td>
+			</tr>
+			<tr>
+				<th scope="row">Basic perf summary</th>
+				<td><img src="pictures/yes.png" class="check" alt="" /></td>
+				<td><img src="pictures/yes.png" class="check" alt="" /></td>
+				<td><img src="pictures/yes.png" class="check" alt="" /></td>
+			</tr>
+			<tr>
+				<th scope="row">Crash trends</th>
+				<td><img src="pictures/no.png" class="check" alt="" /></td>
+				<td><img src="pictures/yes.png" class="check" alt="" /></td>
+				<td><img src="pictures/yes.png" class="check" alt="" /></td>
+			</tr>
+			<tr>
+				<th scope="row">Alerts</th>
+				<td><img src="pictures/no.png" class="check" alt="" /></td>
+				<td><img src="pictures/yes.png" class="check" alt="" /></td>
+				<td><img src="pictures/yes.png" class="check" alt="" /></td>
+			</tr>
+			<tr>
+				<th scope="row">Geolocation</th>
+				<td><img src="pictures/no.png" class="check" alt="" /></td>
+				<td><img src="pictures/no.png" class="check" alt="" /></td>
+				<td><img src="pictures/yes.png" class="check" alt="" /></td>
+			</tr>
+			<tr>
+				<th scope="row">Data retention <em>(perf / errors)</em></th>
+				<td>1 / 30 days</td>
+				<td>7 / 90 days</td>
+				<td>unlimited</td>
+			</tr>
+		</table>
+
+		<p class="note">* Limited to 10K active users/month. Larger plans → Price increase</p>
+	</div></section>
+
+	<section class="slide cover"><div>
+		<h2>Bugsense</h2>
+		<img src="covers/bugsense.jpg" alt="" />
+	</div></section>
+
+	<section class="slide tall"><div>
+		<h2>Bugsense</h2>
+		<ul>
+			<li>Another big player in the mobile monitoring</li>
+			<li>Features:
+				<ul>
+					<li>crash analytics</li>
+					<li>crash search / segmentation</li>
+					<li>users churn and crashed correlation</li>
+					<li>crashes trends</li>
+				</ul>
+			</li>
+			<li>Few Titanium modules available
+				<ul>
+					<li><a href="https://marketplace.appcelerator.com/apps/1264">Bugsense module</a> on Appcelerator Marketplace, by Droisys Inc. Android Only</li>
+				</ul>
+			</li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<img src="pictures/bugsense/dashboard.png" alt="" />
+	</div></section>
+
+	<section class="slide tall"><div>
+		<h2>Howto (android only)</h2>
+		<ul>
+			<li>install the <a href="https://marketplace.appcelerator.com/apps/1264">Bugsense module</a> from the Marketplace</li>
+			<li>
+				enabling Bugsense is easy:
+				<pre><code class="language-javascript">var bugsense = require('com.droisys.bugsense');
+bugsense.setup(bugsenseKey);</code></pre>
+			</li>
+			<li>
+				... and it works:
+				<pre data-line="4"><code class="language-javascript">[INFO]  TiApplication: (main) [0,0] checkpoint, app created.
+[INFO]  TiApplication: (main) [79,79] Titanium 3.2.2 (2014/03/05 12:22 96e9a07)
+[INFO]  TiRootActivity: (main) [0,0] checkpoint, on root activity create, savedInstanceState: null
+[INFO]  BugSenseHandler: Registering default exceptions handler
+[INFO]  homepage
+</code></pre>
+			</li>
+		</ul>
+	</div></section>
+
+	<section class="slide shout"><div>
+		<h2>Monitoring during the development</h2>
+	</div></section>
+
+	<section class="slide tall" id="during-dev"><div>
+		<h2>Fix and deliver <em>fast</em></h2>
+		<ul>
+			<li>Collect, identify and track crashes and bugs</li>
+			<li>Fix it</li>
+			<li>Deliver new versions</li>
+		</ul>
+		<blockquote>
+			<p>How to reduce the bug-report / new delivery process?<br />How to allow testers to be efficient?</p>
+		</blockquote>
+		<ul class="next">
+			<li>Testflight, HockeyApp, Installr</li>
+		</ul>
+	</div></section>
+
+	<section class="slide cover"><div>
+		<h2>Testflight</h2>
+		<img src="covers/8.jpg" alt="" />
+	</div></section>
+
+	<section class="slide tall" id="testflight"><div>
+		<ul>
+			<li>A widespread solution to deliver new versions</li>
+			<li>Formerly iOS + Android, now iOS only<br />→ lost some of its usefulness for cross-platform apps</li>
+		</ul>
+		<img src="pictures/testflight/testflight.png" alt="" />
+	</div></section>
+
+	<section class="slide cover"><div>
+		<h2>HockeyApp</h2>
+		<img src="covers/9.jpg" alt="" />
+	</div></section>
+
+	<section class="slide tall"><div>
+		<h2 style="text-align: center"><img src="pictures/hockeyapp/logo.png" style="width: 150px" alt="" /></h2>
+		<ul>
+			<li>Features:
+				<ul>
+					<li>crash report with server-side symbolication</li>
+					<li>instant distribution</li>
+					<li>feedback collection</li>
+					<li>(simple) analytics</li>
+				</ul>
+			</li>
+			<li>Ti module available: <a href="https://github.com/Rebelcorp/HockeyApp">https://github.com/Rebelcorp/HockeyApp</a></li>
+			<li>no free plan. Starts at $100 / year</li>
+		</ul>
+	</div></section>
+
+	<section class="slide tall"><div>
+		<img src="pictures/hockeyapp/1.png" alt="" />
+	</div></section>
+
+	<section class="slide tall"><div>
+		<img src="pictures/hockeyapp/2.png" alt="" />
+	</div></section>
+
+	<section class="slide"><div>
+		<img src="pictures/hockeyapp/3.png" alt="" />
+	</div></section>
+
+	<section class="slide tall"><div>
+		<h2>Howto</h2>
+		<ul>
+			<li>install the module: <a href="https://github.com/Rebelcorp/HockeyApp">https://github.com/Rebelcorp/HockeyApp</a></li>
+			<li>enable it (iOS + android):
+				<pre data-src="./markup-hockeyapp.html"><code class="language-markup"></code></pre>
+			</li>
+			<li>
+				set up your account:
+				<pre><code class="language-javascript">var hockeyapp = require('nl.rebelic.hockeyapp');
+hockeyapp.start('<yourappid>');</code></pre>
+			</li>
+		</ul>
+	</div></section>
+
+	<section class="slide cover"><div>
+		<h2>Installr</h2>
+		<img src="covers/10.jpg" alt="" />
+	</div></section>
+
+	<section class="slide tall"><div>
+		<h2 style="text-align: center"><img src="pictures/installr/logo.png" style="width: 100px" alt="" /></h2>
+		<ul>
+			<li>Focuses on beta App Distribution</li>
+			<li>cross-platform</li>
+			<li>sync devices and provisioning with Apple Developer Portal</li>
+			<li>Prices depends on devices count (free up to 5 devices)</li>
+		</ul>
+		<img src="pictures/installr/1.png" alt="" />
+	</div></section>
+
+	<section class="slide cover" id="end"><div>
+		<img src="covers/99.jpg" alt="" />
+		<h2>
+			Xavier Lacot<br />
+			<a href="http://jolicode.com">http://jolicode.com</a>
+		</h2>
+	</div></section>
+
+	<div class="progress"><div></div></div>
+	<script src="shower/shower.min.js"></script>
+	<script src="styles/prism.js"></script>
+	<script src="styles/jquery-2.1.1.min.js"></script>
+	<script src="styles/progress.js"></script>
+</body>
+</html>
